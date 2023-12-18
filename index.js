@@ -1,7 +1,8 @@
 const express = require("express")
 const cors = require("cors")
 const morgan = require("morgan")
-const {  } = require("./database/index")
+const { checkConnection, syncModels } = require("./database/index");
+const { setRelations } = require("./database/models");
 
 async function connectDB() {
   await checkConnection();
