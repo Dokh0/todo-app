@@ -1,8 +1,9 @@
 const router = require("express").Router()
 
 const userRouter = require("./user.router")
+const taskRouter = require("./task.router")
 
-router.use("./user.router.js", userRouter)
-router.use(".")
+router.use("/user", userRouter)
+router.use("/task", taskRouter)
 
 module.exports = router
