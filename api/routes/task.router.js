@@ -1,4 +1,4 @@
-const router = require("express")
+const router = require("express").Router()
 const { getAllTask, getOneTask, updateTask, deleteTask } = require("../controllers/task.controller")
 
 router.get("/", getAllTask)
